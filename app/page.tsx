@@ -35,10 +35,14 @@ import AboutSection from "@/components/mantra/AboutSection"
 import FAQSection from "@/components/mantra/FAQSection"
 import FinalCTA from "@/components/mantra/FinalCTA"
 import MantraFooter from "@/components/mantra/MantraFooter"
+import WelcomeExperience from "@/components/mantra/WelcomeExperience"
 
 export default function Home() {
   return (
     <>
+      {/* === WELCOME EXPERIENCE === */}
+      <WelcomeExperience />
+
       {/* === NAVIGASI === */}
       <header role="banner">
         <MantraNavbar />

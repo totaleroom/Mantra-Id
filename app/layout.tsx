@@ -99,6 +99,14 @@ export const metadata: Metadata = {
   },
   category: "technology",
   classification: "Business",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.jpg",
+    shortcut: "/favicon-16x16.jpg",
+  },
     generator: 'v0.app'
 }
 
