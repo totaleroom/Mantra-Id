@@ -158,7 +158,7 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-feature-settings: "ss01", "ss02";
+  /* Removed font-feature-settings that caused "b" superscript issue on mobile */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
