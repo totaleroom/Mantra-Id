@@ -9,6 +9,7 @@ import { Analytics } from "@vercel/analytics/next"
 import StructuredData from "@/components/seo/StructuredData"
 import AnalyticsScripts from "@/components/seo/AnalyticsScripts"
 import { ErrorBoundary } from "@/components/error-boundary"
+import { BrandProvider } from "@/lib/brand-context"
 import { SITE_CONFIG } from "@/lib/seo"
 import "./globals.css"
 
@@ -130,7 +131,9 @@ export default function RootLayout({
         >
           Langsung ke konten utama
         </a>
-        <ErrorBoundary>{children}</ErrorBoundary>
+        <BrandProvider>
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </BrandProvider>
         <Analytics />
       </body>
     </html>
