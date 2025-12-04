@@ -74,14 +74,14 @@ export default function MantraHero() {
 
             {/* === SUB-HEADLINE === */}
             {/* EDIT: Ubah deskripsi di sini */}
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl text-center sm:text-left">
               <strong className="text-foreground">3-4 jam sehari terbuang</strong> untuk bales chat, update stok, input
               order manual? MANTRA otomasi semua itu. Kamu fokus{" "}
               <span className="text-primary font-semibold">grow bisnis</span>, bukan jadi admin.
             </p>
 
             {/* === CTA BUTTONS === */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 items-center sm:items-start">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
@@ -103,9 +103,9 @@ export default function MantraHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                  className="text-center sm:text-left"
+                  className="text-center"
                 >
-                  <stat.icon className="w-5 h-5 text-primary mb-2 mx-auto sm:mx-0" />
+                  <stat.icon className="w-5 h-5 text-primary mb-2 mx-auto" />
                   <div className="font-mono font-bold text-xl sm:text-2xl text-foreground">{stat.value}</div>
                   <div className="text-xs sm:text-sm text-muted-foreground leading-tight">{stat.label}</div>
                 </motion.div>

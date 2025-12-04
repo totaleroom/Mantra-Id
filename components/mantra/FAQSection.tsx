@@ -133,32 +133,34 @@ export default function FAQSection() {
           className="text-center mb-12"
         >
           <div className="label-industrial bg-[#1A1A1A] text-white mb-4">FAQ</div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-4 px-2">
             Pertanyaan yang <span className="text-[#FF4F00]">Sering Ditanyakan</span>
           </h2>
-          <p className="text-lg text-[#666] max-w-2xl mx-auto">Jawaban jujur untuk keraguan Anda. No BS.</p>
+          <p className="text-base sm:text-lg text-[#666] max-w-2xl mx-auto px-4">
+            Jawaban jujur untuk keraguan Anda. No BS.
+          </p>
         </motion.div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 px-2">
           {faqCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center gap-2 px-4 py-2 font-mono text-sm transition-all ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 font-mono text-xs sm:text-sm transition-all ${
                 activeCategory === category.id
                   ? "bg-[#1A1A1A] text-white shadow-industrial"
                   : "bg-[#F5F5F0] text-[#1A1A1A] hover:bg-[#E8E8E8]"
               }`}
             >
-              <category.icon className="w-4 h-4" />
-              <span className="hidden sm:inline">{category.title}</span>
+              <category.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline sm:inline">{category.title}</span>
             </button>
           ))}
         </div>
 
         {/* Questions */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto px-2 sm:px-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeCategory}
@@ -175,11 +177,13 @@ export default function FAQSection() {
                   <div key={questionId} className="border-2 border-[#1A1A1A] bg-white">
                     <button
                       onClick={() => toggleQuestion(questionId)}
-                      className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-[#F5F5F0] transition-colors"
+                      className="w-full flex items-start sm:items-center justify-between p-3 sm:p-4 md:p-5 text-left hover:bg-[#F5F5F0] transition-colors gap-3"
                     >
-                      <span className="font-semibold text-[#1A1A1A] pr-4">{item.q}</span>
+                      <span className="font-medium sm:font-semibold text-sm sm:text-base text-[#1A1A1A] leading-snug">
+                        {item.q}
+                      </span>
                       <ChevronDown
-                        className={`w-5 h-5 text-[#FF4F00] flex-shrink-0 transition-transform ${
+                        className={`w-4 h-4 sm:w-5 sm:h-5 text-[#FF4F00] flex-shrink-0 transition-transform mt-0.5 sm:mt-0 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />
@@ -192,8 +196,8 @@ export default function FAQSection() {
                           exit={{ height: 0, opacity: 0 }}
                           className="overflow-hidden"
                         >
-                          <div className="px-4 md:px-5 pb-4 md:pb-5 border-t-2 border-[#E8E8E8]">
-                            <p className="text-[#666] leading-relaxed pt-4">{item.a}</p>
+                          <div className="px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 border-t-2 border-[#E8E8E8]">
+                            <p className="text-sm sm:text-base text-[#666] leading-relaxed pt-3 sm:pt-4">{item.a}</p>
                           </div>
                         </motion.div>
                       )}

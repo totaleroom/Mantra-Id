@@ -1,13 +1,3 @@
-/* ==========================================================================
-   HOW IT WORKS - 3 Langkah proses kerja MANTRA
-   ==========================================================================
-   
-   AMAN DIEDIT:
-   - steps array: Langkah-langkah proses
-   - Section title dan description
-   
-   ========================================================================== */
-
 "use client"
 
 import { motion } from "framer-motion"
@@ -92,9 +82,9 @@ export default function HowItWorks() {
                 </div>
               )}
 
-              <div className="relative z-10 bg-white border-2 border-[#1A1A1A] shadow-industrial hover-lift p-6">
+              <div className="relative z-10 bg-white border-2 border-[#1A1A1A] shadow-industrial hover-lift p-5 sm:p-6 text-center sm:text-left">
                 {/* Step Number */}
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-4">
                   <div className="w-14 h-14 bg-[#FF4F00] flex items-center justify-center">
                     <span className="font-mono text-xl font-bold text-white">{step.number}</span>
                   </div>
@@ -105,13 +95,13 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Description */}
-                <p className="text-[#666] mb-4">{step.description}</p>
+                <p className="text-[#666] mb-4 text-sm sm:text-base">{step.description}</p>
 
                 {/* Details */}
-                <ul className="space-y-2">
+                <ul className="space-y-2 inline-block text-left">
                   {step.details.map((detail) => (
                     <li key={detail} className="flex items-center gap-2 text-sm text-[#404040]">
-                      <div className="w-1.5 h-1.5 bg-[#FF4F00]" />
+                      <div className="w-1.5 h-1.5 bg-[#FF4F00] flex-shrink-0" />
                       {detail}
                     </li>
                   ))}

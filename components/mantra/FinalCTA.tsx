@@ -24,34 +24,34 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             Masih Mau Balas Chat <br className="hidden sm:block" />
             Sampai Jam 12 Malam?
           </h2>
 
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 px-2">
             Atau mau mulai tidur tenang karena AI yang handle?
             <br />
             Keputusan ada di tangan Anda.
           </p>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 max-w-3xl mx-auto mb-10">
             {benefits.map((benefit) => (
-              <div key={benefit.text} className="flex flex-col items-center gap-2 text-primary-foreground/90">
-                <benefit.icon className="w-6 h-6" />
-                <span className="text-sm font-medium">{benefit.text}</span>
+              <div key={benefit.text} className="flex flex-col items-center gap-2 text-primary-foreground/90 p-2">
+                <benefit.icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm font-medium text-center leading-tight">{benefit.text}</span>
               </div>
             ))}
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 px-2">
             <a
               href="https://wa.me/6281311099023?text=Halo%20MANTRA,%20saya%20mau%20konsultasi%20gratis%20untuk%20bisnis%20saya"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card text-foreground px-8 py-4 font-bold text-lg flex items-center gap-2 hover:bg-background transition-colors shadow-industrial-lg"
+              className="w-full sm:w-auto bg-card text-foreground px-6 sm:px-8 py-4 font-bold text-base sm:text-lg flex items-center justify-center gap-2 hover:bg-background transition-colors shadow-industrial-lg"
             >
               Jadwalkan Konsultasi Gratis
               <ArrowRight className="w-5 h-5" />
@@ -61,13 +61,13 @@ export default function FinalCTA() {
               href="https://wa.me/6281311099023"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-foreground font-mono underline hover:no-underline"
+              className="text-primary-foreground font-mono text-sm sm:text-base underline hover:no-underline"
             >
               Chat langsung: 0813-1109-9023
             </a>
           </div>
 
-          <p className="mt-8 text-primary-foreground/70 text-sm">
+          <p className="mt-8 text-primary-foreground/70 text-xs sm:text-sm px-4">
             Slot konsultasi terbatas 5 bisnis per minggu. First come, first served.
           </p>
         </motion.div>

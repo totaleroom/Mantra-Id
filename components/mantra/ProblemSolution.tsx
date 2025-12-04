@@ -1,14 +1,3 @@
-/* ==========================================================================
-   PROBLEM VS SOLUTION - Perbandingan cara lama vs MANTRA
-   ==========================================================================
-   
-   AMAN DIEDIT:
-   - problems array: Masalah-masalah yang dialami
-   - solutions array: Solusi yang ditawarkan
-   - Section title dan description
-   
-   ========================================================================== */
-
 "use client"
 
 import { motion } from "framer-motion"
@@ -71,12 +60,14 @@ export default function ProblemSolution() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-12 md:mb-16 px-2"
         >
           <div className="label-industrial bg-primary text-primary-foreground mb-4">KENAPA UMKM STUCK</div>
           {/* EDIT: Judul section */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">Sound Familiar?</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Sound Familiar?
+          </h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             80% waktu habis untuk kerjaan repetitif. Padahal bisa diotomasi.
           </p>
         </motion.div>
@@ -88,9 +79,9 @@ export default function ProblemSolution() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-4"
+            className="space-y-3 sm:space-y-4"
           >
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center justify-center sm:justify-start gap-3 mb-4 sm:mb-6">
               <div className="w-10 h-10 bg-destructive/10 flex items-center justify-center">
                 <X className="w-5 h-5 text-destructive" />
               </div>
@@ -109,8 +100,8 @@ export default function ProblemSolution() {
                 <div className="flex items-start gap-3">
                   <problem.icon className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">{problem.title}</h4>
-                    <p className="text-sm text-muted-foreground">{problem.description}</p>
+                    <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">{problem.title}</h4>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{problem.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -122,9 +113,9 @@ export default function ProblemSolution() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-4"
+            className="space-y-3 sm:space-y-4"
           >
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center justify-center sm:justify-start gap-3 mb-4 sm:mb-6">
               <div className="w-10 h-10 bg-chart-2/10 flex items-center justify-center">
                 <Check className="w-5 h-5 text-chart-2" />
               </div>
@@ -143,8 +134,8 @@ export default function ProblemSolution() {
                 <div className="flex items-start gap-3">
                   <solution.icon className="w-5 h-5 text-chart-2 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">{solution.title}</h4>
-                    <p className="text-sm text-muted-foreground">{solution.description}</p>
+                    <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">{solution.title}</h4>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{solution.description}</p>
                   </div>
                 </div>
               </motion.div>

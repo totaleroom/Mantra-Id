@@ -1,14 +1,3 @@
-/* ==========================================================================
-   ABOUT SECTION - Tentang MANTRA (tanpa cerita awal karir)
-   ==========================================================================
-   
-   AMAN DIEDIT:
-   - Semua teks dan deskripsi
-   - Stats dan angka
-   - Pain points dan values
-   
-   ========================================================================== */
-
 "use client"
 
 import { motion } from "framer-motion"
@@ -59,7 +48,7 @@ export default function AboutSection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             Kami Paham <span className="text-[#FF4F00]">Sakitnya</span> Bisnis Anda
           </h2>
-          <p className="text-lg text-[#999] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-[#999] max-w-3xl mx-auto leading-relaxed text-center px-2">
             MANTRA lahir dari frustasi yang sama dengan yang Anda rasakan. Melihat pemilik bisnis yang seharusnya fokus
             mengembangkan produk dan customer, malah terjebak mengurusi hal-hal repetitif yang seharusnya bisa
             diotomasi.
@@ -71,13 +60,13 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-[#252525] border-2 border-[#333] p-6 md:p-8 mb-12"
+          className="bg-[#252525] border-2 border-[#333] p-4 sm:p-6 md:p-8 mb-12"
         >
-          <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
-            <Target className="w-6 h-6 text-[#FF4F00]" />
+          <h3 className="text-lg sm:text-xl font-bold mb-6 flex items-center justify-center sm:justify-start gap-3">
+            <Target className="w-5 h-5 sm:w-6 sm:h-6 text-[#FF4F00]" />
             Pain yang Kami Selesaikan:
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {[
               "Owner yang kerja 14 jam/hari tapi bisnis jalan di tempat",
               "Admin resign, bisnis langsung chaos karena no system",
@@ -86,16 +75,16 @@ export default function AboutSection() {
               "Data customer berserakan di mana-mana",
               "Scaling bisnis = scaling headache",
             ].map((pain, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-[#FF4F00] mt-2 flex-shrink-0" />
-                <span className="text-[#CCC]">{pain}</span>
+              <div key={index} className="flex items-start gap-3 text-center sm:text-left">
+                <div className="w-2 h-2 bg-[#FF4F00] mt-2 flex-shrink-0 hidden sm:block" />
+                <span className="text-sm sm:text-base text-[#CCC]">{pain}</span>
               </div>
             ))}
           </div>
         </motion.div>
 
         {/* Values */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-12">
           {values.map((value, index) => (
             <motion.div
               key={value.title}
@@ -103,9 +92,9 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-[#252525] border-2 border-[#333] p-6 hover:border-[#FF4F00] transition-colors"
+              className="bg-[#252525] border-2 border-[#333] p-5 sm:p-6 hover:border-[#FF4F00] transition-colors text-center sm:text-left"
             >
-              <div className="w-12 h-12 bg-[#FF4F00] flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#FF4F00] flex items-center justify-center mb-4 mx-auto sm:mx-0">
                 <value.icon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold mb-2">{value.title}</h3>
@@ -134,9 +123,9 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-12 text-center px-2"
         >
-          <blockquote className="text-xl md:text-2xl font-bold italic text-[#CCC] max-w-3xl mx-auto">
+          <blockquote className="text-lg sm:text-xl md:text-2xl font-bold italic text-[#CCC] max-w-3xl mx-auto leading-relaxed">
             "Misi kami sederhana: buat automation accessible untuk UMKM Indonesia. Bukan software mahal yang ribet. Tapi
             solusi simple yang langsung bisa dipakai."
           </blockquote>
