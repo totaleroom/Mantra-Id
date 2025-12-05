@@ -6,6 +6,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import StructuredData from "@/components/seo/StructuredData"
 import AnalyticsScripts from "@/components/seo/AnalyticsScripts"
 import { ErrorBoundary } from "@/components/error-boundary"
@@ -128,10 +129,26 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <head>
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K6CCP3FD');`}
+        </Script>
         <StructuredData />
         <AnalyticsScripts />
       </head>
       <body className="font-sans antialiased bg-background text-foreground">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K6CCP3FD"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
         {/* Skip to main content - Accessibility */}
         <a
           href="#main-content"
