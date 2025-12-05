@@ -1,5 +1,8 @@
 /* ==========================================================================
    SEO.TS - Search Engine Optimization utilities
+   
+   FILE INI MENGATUR SEO DAN STRUCTURED DATA
+   Edit BRAND, CONTACT, SOCIAL untuk mengubah info bisnis
    ========================================================================== */
 
 const BRAND = {
@@ -11,13 +14,13 @@ const BRAND = {
 } as const
 
 const CONTACT = {
-  whatsapp: "6281311099023",
-  email: "halo@mantra.id",
-  phoneDisplay: "0813-1109-9023",
+  whatsapp: "6282125086328",
+  email: "hello00mantra@gmail.com",
+  phoneDisplay: "0821-2508-6328",
 } as const
 
 const SOCIAL = {
-  instagram: "https://instagram.com/mantra.id",
+  instagram: "https://instagram.com/hiimantra",
   linkedin: "https://linkedin.com/company/mantra-id",
 } as const
 

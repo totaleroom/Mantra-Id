@@ -9,7 +9,7 @@ import { ArrowRight, Clock, TrendingUp, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useBrandMode, COPY } from "@/lib/brand-context"
 
-const WHATSAPP_NUMBER = "6281311099023"
+const WHATSAPP_NUMBER = "6282125086328"
 
 export default function MantraHero() {
   const { mode } = useBrandMode()

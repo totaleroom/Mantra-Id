@@ -64,7 +64,7 @@ export default function FinalCTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 px-2">
             <a
-              href={`https://wa.me/6281311099023?text=${encodeURIComponent(whatsappMessage)}`}
+              href={`https://wa.me/6282125086328?text=${encodeURIComponent(whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-card text-foreground px-6 sm:px-8 py-4 font-bold text-base sm:text-lg flex items-center justify-center gap-2 hover:bg-background transition-colors shadow-industrial-lg"
@@ -74,12 +74,12 @@ export default function FinalCTA() {
             </a>
             <span className="text-primary-foreground/80 text-sm">atau</span>
             <a
-              href="https://wa.me/6281311099023"
+              href="https://wa.me/6282125086328"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground font-mono text-sm sm:text-base underline hover:no-underline"
             >
-              Chat langsung: 0813-1109-9023
+              Chat langsung: 0821-2508-6328
             </a>
           </div>
 

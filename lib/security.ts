@@ -1,8 +1,11 @@
 /* ==========================================================================
    SECURITY.TS - Keamanan website MANTRA
+   
+   ⚠️ FILE INI MENGANDUNG KONFIGURASI KEAMANAN
+   Hanya ubah WHATSAPP_NUMBER jika nomor bisnis berubah
    ========================================================================== */
 
-const WHATSAPP_NUMBER = "6281311099023" as const
+const WHATSAPP_NUMBER = "6282125086328" as const
 
 const ALLOWED_EXTERNAL_DOMAINS = [
   "wa.me",

@@ -8,10 +8,13 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { MessageSquare, Mail, MapPin, Instagram, Linkedin, X, FileText, Shield } from "lucide-react"
 
+// =============================================================================
+// KONFIGURASI KONTAK - EDIT DI SINI
+// =============================================================================
 const CONTACT = {
-  whatsapp: "6281311099023",
-  email: "halo@mantra.id",
-  phoneDisplay: "0813-1109-9023",
+  whatsapp: "6282125086328",
+  email: "hello00mantra@gmail.com",
+  phoneDisplay: "0821-2508-6328",
 } as const
 
 const BRAND = {
@@ -19,7 +22,7 @@ const BRAND = {
 } as const
 
 const SOCIAL = {
-  instagram: "https://instagram.com/mantra.id",
+  instagram: "https://instagram.com/hiimantra",
   linkedin: "https://linkedin.com/company/mantra-id",
 } as const
 

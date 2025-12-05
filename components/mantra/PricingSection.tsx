@@ -1,19 +1,3 @@
-/* ==========================================================================
-   PRICING SECTION - Paket harga MANTRA
-   ==========================================================================
-   
-   AMAN DIEDIT:
-   - plans array: Data paket (nama, harga, fitur)
-   - Harga setup dan bulanan
-   - Fitur yang included/excluded
-   
-   CATATAN:
-   - Tidak ada garansi uang kembali (sistem deposit)
-   - Lihat PaymentScheme untuk detail pembayaran
-   - ENTERPRISE: Harga custom berdasarkan kebutuhan klien
-   
-   ========================================================================== */
-
 "use client"
 
 import { useState } from "react"
@@ -235,7 +219,7 @@ export default function PricingSection() {
                   Cocok untuk: <span className="font-medium text-[#1A1A1A]">{plan.idealFor}</span>
                 </div>
                 <a
-                  href={`https://wa.me/6281311099023?text=${encodeURIComponent(
+                  href={`https://wa.me/6282125086328?text=${encodeURIComponent(
                     plan.isCustomPricing
                       ? `Halo, saya tertarik dengan paket ENTERPRISE untuk bisnis saya. Bisa jadwalkan konsultasi?`
                       : `Halo, saya tertarik dengan paket ${plan.name}. Bisa info lebih lanjut?`,

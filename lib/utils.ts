@@ -1,17 +1,28 @@
 /* ==========================================================================
    UTILS.TS - Utility functions untuk MANTRA
+   
+   FILE INI BERISI KONFIGURASI UTAMA WEBSITE
+   Edit bagian CONTACT untuk mengubah nomor/email/social media
    ========================================================================== */
 
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
 // =============================================================================
-// CONTACT INFORMATION
+// CONTACT INFORMATION - EDIT DI SINI UNTUK UBAH KONTAK
 // =============================================================================
 export const CONTACT = {
-  whatsapp: "6281311099023",
-  email: "halo@mantra.id",
-  phoneDisplay: "0813-1109-9023",
+  whatsapp: "6282125086328", // Format: 62 + nomor tanpa 0 di depan
+  email: "hello00mantra@gmail.com", // Updated email
+  phoneDisplay: "0821-2508-6328", // Format tampilan untuk user
+} as const
+
+// =============================================================================
+// SOCIAL MEDIA - EDIT DI SINI UNTUK UBAH SOCIAL MEDIA
+// =============================================================================
+export const SOCIAL = {
+  instagram: "https://instagram.com/hiimantra",
+  linkedin: "https://linkedin.com/company/mantra-id",
 } as const
 
 // =============================================================================

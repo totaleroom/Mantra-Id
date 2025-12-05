@@ -9,7 +9,7 @@ import { Menu, X, Phone, Users, Rocket, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useBrandMode, COPY } from "@/lib/brand-context"
 
-const WHATSAPP_NUMBER = "6281311099023"
+const WHATSAPP_NUMBER = "6282125086328"
 
 const navLinks = [
   { href: "#masalah", label: "Masalah" },

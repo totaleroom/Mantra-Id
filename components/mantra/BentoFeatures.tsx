@@ -353,7 +353,7 @@ export default function BentoFeatures() {
                       </div>
                     </div>
                     <a
-                      href={`https://wa.me/6281311099023?text=${encodeURIComponent(
+                      href={`https://wa.me/6282125086328?text=${encodeURIComponent(
                         mode === "juragan"
                           ? `Selamat siang, saya tertarik dengan ${selectedFeatureData.name}. Bisa konsultasi?`
                           : `Halo, saya tertarik dengan ${selectedFeatureData.name}. Bisa konsultasi?`,
